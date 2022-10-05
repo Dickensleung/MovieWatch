@@ -1,0 +1,113 @@
+.watchExist{
+    .nodata{
+        display: none;
+    }
+}
+
+.favExist{
+    .nodata{
+        display: none;
+    }
+}
+
+.wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+    .watchExist{
+        padding: 10px 15px;
+        max-width: 693px;
+        margin: 0 auto;
+        
+    }
+    .movie-lists{
+        margin: 0 auto;
+        max-width: 693px;
+        .movie-list{
+            .movie-info{
+                display: flex;
+                margin: 10px 0;
+                background-color: $watchlaterbgc;
+                border-radius: 5px;
+                height: 190px;
+                padding: 0 0 5px 0;
+                img{
+                    width: 100px;
+                }
+
+                .movie-poster-wrap{
+                    position: relative;
+                    .single-movie-bookmark{
+                        position: absolute;
+                        top: 0;
+                        display: inline-block;
+                        left: 0;
+                        z-index: 20;
+
+                        .bookmark-movie, .unbookmark-movie{
+                            border: none;
+                            width: auto;
+                            height: 3.125rem;
+                            clip-path: polygon(100% 0%, 100% 100%, 50% 80%, 0 100%, 0 50%, 0 0);
+                            font-size: 1.5rem;
+                            text-align: center;
+                            color: $offwhite;
+                            background-color: opacify($color: #000000, $amount: 0);
+                        }
+        
+                        .bookmark-movie:hover, .unbookmark-movie:hover{
+                            cursor: pointer;
+                            transition: stroke .3s ease-in-out;
+                            
+                        }
+        
+                        .bookmark-movie{
+                            background: opacify($color: #0000008c, $amount: 0);
+                        }
+        
+                        .unbookmark-movie{
+                            background: opacify($color: #e5091491, $amount: 0);
+                            
+                            
+                        }
+
+                        
+                    }
+                }
+
+
+                .movie-text{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 10px 0 20px;
+                    position: relative;
+                    h2{
+                        padding: 5px 0;
+                    }
+                    .release-date{
+                        padding: 1px 0;
+                    }
+
+                    .movie-summary{
+                        display: flex;
+                        flex-direction: column;
+                        p{
+                            height: 70px;
+                            padding: 5px 0;
+                            word-wrap: break-word;
+                        }
+                    }
+                }
+            }
+
+            .btn{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border: none;
+                color: $netflixred;
+                background: transparent;
+                font-size: .7em;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+// Functions
+@import './utilities/functions.scss';
+
+// Settings
+@import './base/settings';
+
+// Utilities
+@import './utilities/mixins.scss';
+
+// Resets
+@import './base/reset';
+@import './base/types';
+
+//Components
+@import './components/flickity';
+@import './base/animations';
+@import './components/movie-list';
+@import './components/single-movies';
+@import './components/nav';
+@import './components/movie-slider';
+@import './components/header';
+@import './components/home';
+@import './components/slick-slider';
+@import './components/search';
+@import './components/body-hover-card';
+@import './components/watch-later';
+@import './components/ratings';
+@import './components/trailer';
+@import './components/media-quries';
+@import './components/footer';

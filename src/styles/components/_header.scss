@@ -1,0 +1,190 @@
+Header{
+    height: 60px;
+    -webkit-box-shadow: 0px 25px 29px 50px rgba(0,0,0,0.84); 
+    box-shadow: 0px 25px 29px 30px rgba(0,0,0,0.84);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.84);
+    z-index: 9999;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    position: fixed;
+
+    #btn-menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        z-index: 99;
+        .btn-menu-left{
+            float: left;
+            width: 80%;
+            justify-content: flex-start;
+        }
+        .btn-menu-right{
+            float: right;
+            width: 20%;
+            justify-content: flex-end;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            padding: 0 0 0 .5em;
+
+            
+            li:hover{
+                cursor: pointer;
+            }
+
+            .menu-bar1,
+            .menu-bar2,
+            .menu-bar3 {
+            width: 2.5rem;
+            height: 0.2rem;
+            background-color: $white;
+            margin: 0.45rem 0;
+            transition: 0.4s;
+            }
+
+            .menu-bar2 {
+            width: 2rem;
+            margin-left: auto;
+            }
+            /* ROTATE FIRST BAR */
+            .active .menu-bar1 {
+                transform: rotate(-45deg) translate(-0.5rem, 0.5rem);
+            }
+            
+            /* FADE OUT SECOND BAR */
+            .active .menu-bar2 {
+                opacity: 0;
+            }
+            
+            /* ROTATE LAST BAR */
+            .active .menu-bar3 {
+                transform: rotate(45deg) translate(-6px, -8px);
+            }
+            .desk-menu{
+                display: none;
+                flex-direction: row;
+                padding: .7em 1.2em .7em 1.2em;
+                transition: width .5s ease-in-out;
+                /* -----
+                SVG Icons - svgicons.sparkk.fr
+                ----- */
+
+                .svg-icon {
+                    width: 1.5em;
+                    height: 1.5em;
+                    }
+                    
+                    .svg-icon path,
+                    .svg-icon polygon,
+                    .svg-icon rect {
+                    stroke: rgba(255, 255, 255, 0.856);
+                    }
+                    
+                    .svg-icon circle {
+                    stroke: rgba(255, 255, 255, 0.856);
+                    stroke-width: 1;
+                    }
+                h2{
+                    padding: .3em .5em 0 .5em;
+                    font-size: .9em;
+                    font-weight: 600;
+                    color: rgba(255, 255, 255, 0.836);
+                    display: inline-block;
+                    color: $offwhite;
+                }
+                
+                h2::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: $white;
+                    transition: width .3s;
+                }
+
+                h2:hover::after{
+                    width: 100%;
+                    //transition: width .3s;
+                }
+
+                button{
+                    border: none;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.856);
+                }
+            }
+        }
+        
+    }
+}
+
+#movie-watch-home{
+    clip-path: polygon(20% 50%, 0 50%, 50% 0, 100% 50%, 80% 50%, 80% 90%, 60% 90%, 60% 80%, 40% 80%, 40% 90%, 20% 90%);
+    width: 1.5rem;
+    height: 1.5rem;   
+}
+#movie-watch-search{
+    border: none;
+}
+
+#movie-watch-watchlist{
+    clip-path: polygon(35% 0%,65% 0%,65% 35%,100% 35%,100% 60%,65% 60%,65% 100%,35% 100%,35% 60%,0% 60%,0% 35%,35% 35%);
+    width: 1rem;
+    height: 1rem;
+    margin-top: 2px;
+}
+
+#movie-watch-favourite{
+    width: 1.5rem;
+    height: 1.5rem;  
+    clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+}
+
+.icons8-about { 
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiN1bmRlZmluZWQ7Ij4gICAgPHBhdGggZD0iTSAxMiAyIEMgMTAuMzQzIDIgOSAzLjM0MyA5IDUgQyA5IDYuNjU3IDEwLjM0MyA4IDEyIDggQyAxMy42NTcgOCAxNSA2LjY1NyAxNSA1IEMgMTUgMy4zNDMgMTMuNjU3IDIgMTIgMiB6IE0gOSAxMCBBIDEuMDAwMSAxLjAwMDEgMCAxIDAgOSAxMiBMIDEwIDEyIEwgMTAgMjAgTCA5IDIwIEEgMS4wMDAxIDEuMDAwMSAwIDEgMCA5IDIyIEwgMTUgMjIgQSAxLjAwMDEgMS4wMDAxIDAgMSAwIDE1IDIwIEwgMTQgMjAgTCAxNCAxMSBDIDE0IDEwLjQ0OCAxMy41NTIgMTAgMTMgMTAgTCAxMSAxMCBMIDkgMTAgeiI+PC9wYXRoPjwvc3ZnPg==') 50% 50% no-repeat;
+    background-size: 100%; 
+    background-color: #fff;
+}
+
+
+.hide{
+    visibility: hidden;
+}
+
+.logo{
+    padding: 0 5px;
+    img{
+        width: 65px;
+        height: 65px;
+        margin: 10px 5px;
+    }
+}
+
+
+
+#search-icon{
+    background: transparent;
+    border: none;
+    button{
+        background: none;
+        border: none;
+    }
+}
+
+
+#search-icon img{
+    padding: 0 5px 0 0;
+    width: 45px;
+    cursor: pointer;
+}

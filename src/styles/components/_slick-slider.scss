@@ -1,0 +1,28 @@
+/* ---- Slick-button ---- */
+
+.slick-arrow{
+    width: 55px;
+    height: 100px;
+    z-index: 900;
+    margin: 0 30px;
+    border-radius: 5px;
+}
+
+.slick-arrow .slick-next{
+    width: 55px;
+    height: 100px;
+    
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 3.75rem;
+    color: transparent;
+    
+    
+}
+
+.slick-slider:hover{
+    .slick-prev:before, .slick-next:before {
+        color: rgba(255, 255, 255, 0.514);
+    }
+}

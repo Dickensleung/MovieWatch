@@ -1,0 +1,327 @@
+.single-m-page{
+    position: relative;
+
+
+    #single-bg-image{
+        position: absolute;
+        width: 100%;
+        z-index: -99;
+        opacity: 90%;
+          /* Add the blur effect */
+        filter: blur(100px);
+        -webkit-filter: blur(100px);
+    }
+}
+
+
+.trailer-m-wrapper{
+    margin: 1em 0;
+    .other-trailers-wrapper{
+        margin: 0;
+        width: 100%;
+        padding: 0  0 0 1em;
+        
+        .flickity-prev-next-button.previous{
+            left: 0;
+        }
+        .flickity-prev-next-button{
+            top: 40%;
+            height: 250px;
+            border-radius: 10px;
+            background-color: #3837378d;
+            .flickity-button-icon{
+                fill: rgb(250, 250, 250);
+            }
+        }
+
+        .trailer-list{
+            padding: 0 1em;
+        }
+    }
+}
+
+.single-m-wrapper{
+    max-width: 1080px;
+    margin: 2em auto;
+    position: relative;
+    
+    .heading{
+        margin: 1.1em 0;
+        padding: 2em .5em;
+        max-width: 100%;
+
+        h1{
+            font-size: 2.5em;
+            font-weight: 600;
+            line-height: 2.125rem;
+            margin-bottom: 5px;
+        }
+        h2{
+            font-size: 1.2em;
+            padding: 0.25rem 0em;
+            color: $paragraphtext;
+        }
+    }
+
+    .single-m-sub-text{
+        height: 10px;
+        display: flex;
+        padding: .2em 0.6em 1em 0.6em;
+        align-items: center;
+        h3{
+            font-size: .8em;
+        }
+        
+        span{
+            font-size: 2em;
+            color: $offwhite;
+        }
+    }
+
+    .hero-sub-nav{
+        height: 50px;
+        width: 100%;
+        position: sticky;
+        background-color: $subnav;
+        border-radius: 5px;
+        margin: 5px 0;
+
+        .single-movie-bookmark{
+            position: absolute;
+            right: 0;
+            margin: 0 10px;
+        }
+    }
+
+    .hero-media-container{
+        .single-bg-poster{
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+            iframe{
+                width: 100%;
+            }
+        }
+
+        .single-movie-poster{
+            position: absolute;
+            padding: 0.5rem;
+            bottom: 0;
+            left: 1em;
+            max-width: 5vw;
+            height: auto;
+            visibility: hidden;
+        }
+    
+    }
+
+    .single-m-content{
+            margin: -1em 0;
+            background-color: $subnav;
+
+        .single-m-header{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0;
+            
+            h1{
+                color: $offwhite;
+                
+            }
+        }
+
+        .single-m-text{
+            padding: .5em .7em 2em;
+            margin: 0;
+            p{
+                line-height: 1.2;
+                font-weight: 400;
+                margin: 10px 0 24px;
+                padding-right: 2em;
+            }
+
+            .genre, .rate{
+                padding: 1rem 0;
+            }
+
+            .genre{
+                width: 100%;
+                min-height: 6em;
+                h3{
+                    float: left;
+                    padding: .35em .75em;
+                    margin: 0 5px 0 0;
+                    background: transparent;
+                    border: .12em solid $netflixred;
+                    border-radius: 25px;
+                }
+                
+            }
+
+            .cast-wrapper{                
+                .cast-wrapper{
+                    width: 100%;
+                }
+
+               .slick-slider {
+                    overflow: hidden;
+                    padding: 0 1em;
+                    margin: 0;
+                    .actors-card-container{
+                        margin: 0 auto;
+                        max-height: 300px;
+                        align-items: center;
+                        
+                    }
+
+                    img{
+                        width: 7rem;
+                        height: 8rem;
+                        border-radius: 100px;
+                        align-items: center;
+                        margin: 0 auto;
+                    }
+
+
+                    .actor-name{
+                        padding: 1em 0;
+                        margin: 0;
+                        text-align: center;
+                        height: 50px;
+                    }
+                }
+                .behind-the-scene-crew-container{
+                    border-bottom: 1px solid white;
+                    padding: 10px 5px 5px 5px;
+                    h2{
+                        font-weight: 700;
+                        padding: 10px 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.section-title{
+    padding: 1em .4em;
+    font-size: 1.75em;
+    font-weight: 500;
+    height: 100%;
+}
+
+.section-title::before{
+    background: $netflixred;
+    margin-left: -10px;
+    content: '';
+    height: 30px;
+    width: 5px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.bookmark-movie, .unbookmark-movie{
+    border: none;
+    width: 30px;
+    max-width: 30px;
+    height: 3.125rem;
+    min-height: 3.125rem;
+    clip-path: polygon(100% 0%, 100% 100%, 50% 80%, 0 100%, 0 50%, 0 0);
+    font-size: 1.5rem;
+    color: $offwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bookmark-movie{
+    background: opacify($color: #0000008c, $amount: 0);
+}
+
+.unbookmark-movie{
+    background: opacify($color: #e9222c, $amount: 0);
+}
+
+.video-responsive {
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+height: 0;
+}
+
+.video-responsive iframe {
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+position: absolute;
+}
+
+.watch-providers{
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem 0 3rem 0;
+    padding: 1em 0;
+    .provider-container{
+        padding: 20px 0;
+    }
+    .provider-container-two{
+        h2{
+            margin: 5px;
+            font-size: 1.2em;
+        }
+    }
+    .providers{
+        width: 100%;
+
+        .provider{
+            img{
+                width: 60px;
+                height: auto;
+                padding: 5px;
+                border-radius: 15px;
+                float: left;
+            }
+        }
+
+        p{
+            padding: 0 5px;
+        }
+    }
+}
+
+.media-container{
+    .recommendations{
+        .suggested-movie{
+            img{
+                max-width: 120px;
+                height: auto;
+            }
+            h2{
+                padding: .7rem 0 1rem;
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+.bookmark-movie:hover, .unbookmark-movie:hover{
+    cursor: pointer;
+    transition: stroke .3s ease-in-out;
+}
+
+.bookmark-movie:hover{
+    background-color: opacify($color: #5151518c, $amount: 0);
+}
+.unbookmark-movie:hover{
+    background-color: opacify($color: #5151518c, $amount: 0);
+
+}
+
+

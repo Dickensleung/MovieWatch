@@ -1,0 +1,166 @@
+@media only screen and (min-width: 768px){
+    .single-m-wrapper{
+        .hero-media-container{
+            .single-bg-poster{
+                .youtube-container{
+                    iframe{
+                        width: 100%;
+                        min-height: 55vh;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar{
+        #btn-menu{
+            ul{
+                .desk-menu{
+                    display: flex;
+                }
+
+                li{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .about-wrapper{
+        margin: 8em auto;
+        padding: 3em 0;
+    }
+    .movie-text .movie-summary p{
+        padding: 0 0.5em 5em 0;
+    }
+
+    .single-m-wrapper {
+        .single-m-content{
+            .single-m-text{
+                p{
+                    margin: 0 0 5px 0;
+                }
+            }
+        }
+    }
+    
+    .year-search{
+        width: 48%;
+        float: left;
+    }
+
+    .genre-and-year-search{
+        width: 48%;
+        float: left;
+    }
+
+    #search-desktop-view{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .trailer-m-wrapper h2{
+        padding: 0;
+    }
+
+    .trailer-media-container .trailer-video h2{
+        margin: 0;
+    }
+}
+
+
+@media only screen and (min-width: 1387px){
+    .content-wrapper{
+        margin: 2em 0;
+    }
+    .carouselImage {
+        .bg-home-poster {
+            .single-home-poster {
+                top: 65%;
+
+                .home-info{
+                    padding: 5px 0 0 10px;
+                    h3{
+                        padding: 10px 6em 10px 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .carouselImage img {
+        width: 100%;
+        height: auto;
+        padding: 20px 30px;
+    }
+
+    .flickity-page-dots {
+    visibility: visible;
+    }
+
+    .carouselImage{
+        .bg-home-poster{
+            .single-home-poster{
+                .home-info{
+                    width: 35%;
+                    h1{
+                        font-size: 1.5em;
+                    }
+                    
+                    h3{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .single-m-wrapper{
+        .heading{
+            padding: 2em 2em 0  .5em;
+        }
+
+    }
+
+    .page-wrapper{
+        .movie-lists{
+            max-width: 1330px;
+        }
+    }
+
+    .navbar{
+        padding: 0 1em;
+    }        
+
+}
+
+@media only screen and (min-width: 1800px){
+    .slick-arrow{
+        height: 200px;
+    }
+
+    .content-wrapper{
+        margin: 0 auto;
+        .content-home{
+            margin: 0 0 0 6em;
+        }
+    }
+
+    .single-m-wrapper{
+        .hero-media-container{
+            .single-movie-poster{
+                visibility: visible;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 2560px){
+    
+    .navbar{
+        padding: 0 8.5em;
+    }
+
+}

@@ -1,0 +1,9 @@
+// convert Px to Ems
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em; 
+}
+
+// convert Px to Rems
+@function rem($px, $bc: 16){
+    @return #{$px/$bc}rem; 
+}

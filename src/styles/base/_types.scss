@@ -1,0 +1,50 @@
+body {
+    font-family: $bodyFont;
+    font-weight: 300;
+    margin: 0;
+    background-color: $mainbodyblack;
+}
+
+h1, h2, h3, h4 {
+    font-family: $bodyFont;
+    color: $offwhite;   
+}
+
+h1, h2, h3, h4, p{
+    margin-top: 0;
+}
+
+nav ul li a {
+    font-family: $headingFontLight;
+}
+
+a{
+    text-decoration: none;
+    color: $offwhite;
+    
+}
+
+li{
+    list-style: none;
+}
+
+.hr1{
+    height: 0;
+    min-width: 170px;
+    border: 1px solid $netflixred;
+    margin: 10px 2px;
+}
+
+p{
+    color: $paragraphtext;
+    font-family: $bodyFont;
+}
+
+img{
+    display: inline-block;
+    height: auto;
+}
+
+button:hover{
+    cursor: pointer;
+}

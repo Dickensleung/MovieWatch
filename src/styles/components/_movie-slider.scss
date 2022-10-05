@@ -1,0 +1,24 @@
+//Class Slider-text, hover to display.
+.slick-slider h2{
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.slick-slider p{
+    font-size: 0.9rem;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 500ms;
+}
+
+.post img:hover {
+    cursor: pointer;
+    transform: scale(1.05);  
+}
+
+.slick-slider{
+    margin: auto;
+}
